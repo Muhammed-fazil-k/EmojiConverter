@@ -1,0 +1,28 @@
+{
+  "app": {
+    "bundleName": "com.example.emojiconverter",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 5,
+      "releaseType": "Release"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.example.emojiconverterlibrary",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "emojiconverterlibrary",
+      "moduleType": "har"
+    }
+  }
+}

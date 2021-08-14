@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TextToEmoji.iml" filepath="$PROJECT_DIR$/TextToEmoji.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EmojiConverter.iml" filepath="$PROJECT_DIR$/.idea/modules/EmojiConverter.iml" group="EmojiConverter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emojiconverterlibrary/emojiconverterlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/emojiconverterlibrary/emojiconverterlibrary.iml" group="EmojiConverter/emojiconverterlibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/entry/entry.iml" filepath="$PROJECT_DIR$/.idea/modules/entry/entry.iml" group="EmojiConverter/entry" />
     </modules>
   </component>
 </project>
