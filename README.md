@@ -76,10 +76,6 @@ textField.addTextObserver((s, i, i1, i2) -> {
      
 ```
 
-## Issues
-Currently we can't convert the text on the textfield to emoji in itself.
-This library only supports for phones(try not using other devices)
-
 ## Future works
 Currently Json file for the emoji is stored locally in library which can be fetched using api. 
 
