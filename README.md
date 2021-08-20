@@ -28,14 +28,7 @@ This library converts text to it's corresponding emoji .
 	}
 
 ```
-3. For using MaterialLetterIcon from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
-```
-	dependencies {
-		//implementation 'dev.applibgroup:materiallettericon:1.0.0'//
-		testImplementation 'junit:junit:4.13'
-	}
 
-```
 ## Usage
 Declare in XML (see xml attributes below for customization):
 
@@ -77,7 +70,8 @@ textField.addTextObserver((s, i, i1, i2) -> {
 ```
 
 ## Future works
-Currently Json file for the emoji is stored locally in library which can be fetched using api. 
+Since the retrofit library is unavailable in hmos , emojis.json file was parsed from a local directory using zsonArray and zsonObject .
+Once retrofit library is available in hmos , emoji.json can be parsed using it.
 
 ## License
  Copyright (C) 2020-21 Application Library Engineering Group
