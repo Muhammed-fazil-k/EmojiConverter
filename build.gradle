@@ -2,7 +2,6 @@
 apply plugin: 'com.huawei.ohos.app'
 apply plugin: 'org.sonarqube'
 apply plugin: 'checkstyle'
-
 	
 buildscript {
     repositories {
@@ -20,7 +19,6 @@ buildscript {
         classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3"
     }
 }
-
 
 ohos {
     compileSdkVersion 5
@@ -44,13 +42,14 @@ allprojects {
         configFile file("config/checkstyle.xml")
 
         source 'entry/src/main/java'
-        source ':emojiconverter/src/main/java'
+        source 'emojiconverter/src/main/java'
         include '**/*.java'
 
         // empty classpath
         classpath = files()
     }
 }
+
 checkstyle {
     toolVersion "8.43"
 }

@@ -65,15 +65,7 @@ public class EmojiConverter {
         }
         if (emojiList != null) {
             StringBuilder processedText = new StringBuilder();
-            for (int i = 0; i < userKeywords.size(); i++) {
-                for (EmojiResponse model : emojiList) {
-                    String keyWord = userKeywords.get(i);
-                    List<String> emojiKeywords = model.getKeywords();
-                    if (emojiKeywords.contains(keyWord)) {
-                        userKeywords.set(i, model.getChar());
-                    }
-                }
-            }
+            userKeywords = updatedUserKeywords(userKeywords);
             for (int i = 0; i < userKeywords.size(); i++) {
                 String generatedString = userKeywords.get(i);
                 processedText.append(generatedString);
@@ -86,6 +78,20 @@ public class EmojiConverter {
             return EMPTY_STRING;
         }
     }
+
+    List<String> updatedUserKeywords(List<String> userKeywords) {
+        for (int i = 0; i < userKeywords.size(); i++) {
+            for (EmojiResponse model : emojiList) {
+                String keyWord = userKeywords.get(i);
+                List<String> emojiKeywords = model.getKeywords();
+                if (emojiKeywords.contains(keyWord)) {
+                    userKeywords.set(i, model.getChar());
+                }
+            }
+        }
+        return userKeywords;
+    }
+
 
     /**
      * initialiseJson method will add all EmojiResponse objects into the emojiList.

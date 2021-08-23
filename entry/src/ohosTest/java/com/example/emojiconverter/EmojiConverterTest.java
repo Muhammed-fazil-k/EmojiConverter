@@ -23,6 +23,7 @@ import org.junit.Before;
 import org.junit.Test;
 import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class EmojiConverterTest {
     EmojiConverter emojiConverter;
@@ -36,10 +37,8 @@ public class EmojiConverterTest {
 
     @Test
     public void testProcessStringIsNull() {
-        ArrayList<String> testList = new ArrayList<>();
-        testList=null;
-        String output=emojiConverter.processString(testList);
-        assertEquals( null,output);
+        String output=emojiConverter.processString(null);
+        assertNull( output);
     }
 
     @Test
@@ -69,7 +68,7 @@ public class EmojiConverterTest {
     @Test
     public void testConvertToEmojiIsNull() {
         String output=emojiConverter.convertToEmoji(null);
-        assertEquals( null,output);
+        assertNull( output);
     }
 
     @Test
