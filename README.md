@@ -6,8 +6,8 @@ This is a HMOS library used to convert text to Emoji's from a textfield or from 
 The code in this repository was inspired from [AnkitKiet/EmojiConverter - Release 1.15](https://github.com/AnkitKiet/EmojiConverter). 
 We are very thankful to AnkitKiet. 
 
-## Feature
-This library converts text to it's corresponding emoji .
+## Demo
+EmojiConverter library converts text to it's corresponding emoji .
 
 ![finaldemo](https://user-images.githubusercontent.com/60657039/129444769-961ac72c-85b2-41b5-b45d-aadd904349ce.gif)
 

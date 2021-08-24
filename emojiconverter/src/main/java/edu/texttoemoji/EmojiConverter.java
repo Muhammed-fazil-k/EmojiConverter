@@ -65,7 +65,7 @@ public class EmojiConverter {
         }
         if (emojiList != null) {
             StringBuilder processedText = new StringBuilder();
-            userKeywords = updatedUserKeywords(userKeywords);
+            userKeywords = convertUserKeywords(userKeywords);
             for (int i = 0; i < userKeywords.size(); i++) {
                 String generatedString = userKeywords.get(i);
                 processedText.append(generatedString);
@@ -79,7 +79,17 @@ public class EmojiConverter {
         }
     }
 
-    List<String> updatedUserKeywords(List<String> userKeywords) {
+    /**
+     * convertUserKeywords will replace the user keywords by corresponding emoji
+     * if any keywords matches with the keywords in emojiList.
+     *
+     * @param userKeywords list of words that user entered
+     * @return updatedUserKeywords which is list of words with emoji
+     */
+    public List<String> convertUserKeywords(List<String> userKeywords) {
+        if (userKeywords == null) {
+            return Collections.emptyList();
+        }
         for (int i = 0; i < userKeywords.size(); i++) {
             for (EmojiResponse model : emojiList) {
                 String keyWord = userKeywords.get(i);
