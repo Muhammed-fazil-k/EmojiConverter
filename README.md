@@ -1,3 +1,6 @@
+[![Build](https://github.com/applibgroup/EmojiConverter/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/EmojiConverter/actions/workflows/main.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_EmojiConverter&metric=alert_status)](https://sonarcloud.io/dashboard?id=applibgroup_EmojiConverter)
+
 # EmojiConverter
 This is a HMOS library used to convert text to Emoji's from a textfield or from other sources.  
 
